@@ -1,4 +1,7 @@
 ---
+networks:
+  nginx_network:
+    external: true
 version: "2.1"
 services:
   jellyfin:
@@ -19,6 +22,8 @@ services:
       - 8920:8920 #optional
       - 7359:7359/udp #optional
       - 1900:1900/udp #optional
+    networks:
+      - nginx_network
     # devices:
     #   - /dev/dri:/dev/dri #optional
     #   - /dev/vcsm:/dev/vcsm #optional

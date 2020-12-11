@@ -1,4 +1,8 @@
-!movies/.keep
 config/
-tv/
+tv/*
+!tv/.keep
 movies/*
+!movies/.keep.#*
+.env
+.#*
+.env
